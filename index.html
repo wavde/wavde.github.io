@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejas Wavde — Senior Data Scientist · Experimentation · Causal Inference</title>
+  <meta name="description" content="Senior Data Scientist focused on experimentation, causal inference, and decision-grade product analytics. Author of the causal-inference-playbook and the experiment-toolkit PyPI package." />
+  <meta name="theme-color" content="#0b0f17" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tejas Wavde — Senior Data Scientist" />
+  <meta property="og:description" content="Experimentation · causal inference · decision-grade product analytics." />
+  <meta property="og:url" content="https://wavde.github.io" />
+  <link rel="canonical" href="https://wavde.github.io" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AA%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero">
+    <div class="container">
+      <nav aria-label="primary">
+        <span class="brand">tw</span>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Senior Data Scientist</p>
+        <h1>Experimentation, causal&nbsp;inference, and decision-grade product analytics.</h1>
+        <p class="lede">
+          I build the methods, the tooling, and the memos that turn messy
+          product data into decisions — the problems senior analytics ICs
+          own at FAANG scale.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">See the work</a>
+          <a class="btn ghost" href="https://github.com/wavde" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <section id="projects" aria-labelledby="projects-h">
+      <h2 id="projects-h">Featured projects</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="https://github.com/wavde/causal-inference-playbook" target="_blank" rel="noopener">causal-inference-playbook</a></h3>
+          <p class="tag-row">
+            <span class="tag">A/B + CUPED</span>
+            <span class="tag">PSM / AIPW</span>
+            <span class="tag">Synthetic control</span>
+            <span class="tag">Diff-in-Diff</span>
+            <span class="tag">mSPRT</span>
+          </p>
+          <p>A hands-on tour of experimentation and causal methods. Six
+          memo-style case studies — each with real code, parallel-trends
+          or balance diagnostics, and a one-page executive writeup.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/wavde/experiment-toolkit" target="_blank" rel="noopener">experiment-toolkit</a> <span class="pill">PyPI</span></h3>
+          <p class="tag-row">
+            <span class="tag">Python package</span>
+            <span class="tag">CUPED</span>
+            <span class="tag">mSPRT</span>
+            <span class="tag">Callaway-Sant'Anna</span>
+            <span class="tag">E-values</span>
+          </p>
+          <p>A small, tested, typed Python package: sample-size / MDE,
+          CUPED (and CUPED-aware power), sequential testing, ratio-metric
+          delta method, staggered DiD, and observational sensitivity
+          analysis. <code>pip install experiment-toolkit</code>.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/wavde/product-analytics-deepdive" target="_blank" rel="noopener">product-analytics-deepdive</a></h3>
+          <p class="tag-row">
+            <span class="tag">SQL-first</span>
+            <span class="tag">DuckDB + Spark SQL</span>
+            <span class="tag">Funnels</span>
+            <span class="tag">Cohorts</span>
+            <span class="tag">North-star metric</span>
+          </p>
+          <p>End-to-end product analytics on a public dataset: funnels,
+          retention cohorts, engagement segmentation, and a memo
+          proposing a defensible north-star metric under Goodhart's law.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/wavde/analytics-sandbox" target="_blank" rel="noopener">analytics-sandbox</a></h3>
+          <p class="tag-row">
+            <span class="tag">FAANG SQL</span>
+            <span class="tag">Window functions</span>
+            <span class="tag">Funnels</span>
+            <span class="tag">Retention math</span>
+          </p>
+          <p>A curated set of FAANG-style SQL interview problems, with
+          short references for the patterns that show up again and again:
+          windowed aggregations, sessionisation, retention curves, and
+          cohort funnels.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="writing" aria-labelledby="writing-h">
+      <h2 id="writing-h">Writing</h2>
+      <ul class="posts">
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/twfe-lies-on-staggered-rollouts.md" target="_blank" rel="noopener">When TWFE lies: staggered rollouts and what Callaway-Sant'Anna buys you</a>
+          <p>Why the default DiD regression is biased under staggered adoption, and what to do instead.</p>
+        </li>
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/e-values-for-observational-memos.md" target="_blank" rel="noopener">E-values: the one-number sensitivity check every observational memo should have</a>
+          <p>Quantifying robustness to unmeasured confounding with two lines of code.</p>
+        </li>
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/cuped-inside-sequential-testing.md" target="_blank" rel="noopener">CUPED inside sequential testing: two variance reductions that compound</a>
+          <p>When and how to combine CUPED with mSPRT without breaking the always-valid guarantee.</p>
+        </li>
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/finding-and-fixing-msprt-bug.md" target="_blank" rel="noopener">Finding (and fixing) a 17% Type-I error bug in my own mSPRT implementation</a>
+          <p>A case for property-based tests in statistical code.</p>
+        </li>
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/what-lalonde-taught-me.md" target="_blank" rel="noopener">What LaLonde taught me about propensity score matching</a>
+          <p>AIPW vs PSM on a replication benchmark.</p>
+        </li>
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/picking-a-north-star-metric.md" target="_blank" rel="noopener">Picking a north-star metric when every candidate has a tradeoff</a>
+          <p>A framework for metric selection under Goodhart's law.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p>The easiest way to reach me is to open an issue on one of the
+      projects above — I read them all. For longer-form things:</p>
+      <ul class="links">
+        <li><a href="https://github.com/wavde" target="_blank" rel="noopener">GitHub · @wavde</a></li>
+        <li><a href="https://pypi.org/user/tejas.dev/" target="_blank" rel="noopener">PyPI · tejas.dev</a></li>
+        <li><a href="https://github.com/wavde/wavde/issues/new" target="_blank" rel="noopener">Open an issue on the profile repo</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Tejas Wavde · <a href="https://github.com/wavde/wavde.github.io" target="_blank" rel="noopener">Source</a></p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
