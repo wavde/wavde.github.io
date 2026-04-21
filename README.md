@@ -1,6 +1,6 @@
 # wavde.github.io
 
-Source for my personal site — [wavde.github.io](https://wavde.github.io).
+Source for my personal site: [wavde.github.io](https://wavde.github.io).
 
 Plain HTML + CSS, no build step. Edit `index.html` or `styles.css` and
 push; GitHub Pages serves it automatically.

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="dark light" />
-  <title>Tejas Wavde — Experimentation &amp; Causal Inference for Product</title>
+  <title>Tejas Wavde: Experimentation &amp; Causal Inference for Product</title>
   <meta name="description" content="Causal inference and A/B testing for product decisions. Six case studies, the experiment-toolkit Python package, and short essays on the methods." />
   <meta name="author" content="Tejas Wavde" />
   <meta name="theme-color" content="#0b0f17" media="(prefers-color-scheme: dark)" />
@@ -12,13 +12,13 @@
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Tejas Wavde — Experimentation &amp; Causal Inference for Product" />
+  <meta property="og:title" content="Tejas Wavde: Experimentation &amp; Causal Inference for Product" />
   <meta property="og:description" content="Data Scientist. Case studies, a PyPI package, and essays on the methods that ship in production." />
   <meta property="og:url" content="https://wavde.github.io/" />
   <meta property="og:site_name" content="Tejas Wavde" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Tejas Wavde — Experimentation &amp; Causal Inference" />
+  <meta name="twitter:title" content="Tejas Wavde: Experimentation &amp; Causal Inference" />
   <meta name="twitter:description" content="Case studies, a PyPI package, and essays on the methods that ship in production." />
 
   <link rel="canonical" href="https://wavde.github.io/" />
@@ -68,11 +68,11 @@
 
       <div class="hero-content" id="top">
         <p class="eyebrow">Data Science · Analytics · Experimentation</p>
-        <h1>Causal inference and A/B testing for product decisions.</h1>
+        <h1>Experimentation and causal inference for product decisions.</h1>
         <p class="lede">
-          Six case studies, the
+          Case studies, the
           <a href="https://pypi.org/project/experiment-toolkit/" target="_blank" rel="noopener"><code>experiment-toolkit</code></a>
-          Python package, and short essays on the methods.
+          Python package, and short essays on the methods behind each one.
         </p>
         <div class="cta-row">
           <a class="btn primary" href="#work">See the work</a>
@@ -82,7 +82,7 @@
         <dl class="proof" aria-label="Portfolio highlights">
           <div><dt>6</dt><dd>causal-inference case studies</dd></div>
           <div><dt>1</dt><dd>Python package on PyPI</dd></div>
-          <div><dt>6</dt><dd>essays on methods in&nbsp;production</dd></div>
+          <div><dt>6</dt><dd>essays on the methods</dd></div>
         </dl>
       </div>
     </div>
@@ -93,7 +93,7 @@
     <section id="work" aria-labelledby="work-h">
       <div class="section-head">
         <h2 id="work-h">Work</h2>
-        <p class="section-sub">Four flagship repos. Each one is end-to-end, tested, and reviewable.</p>
+        <p class="section-sub">Four repositories. Each one is end-to-end, tested, and reviewable.</p>
       </div>
 
       <div class="grid">
@@ -104,9 +104,10 @@
             <span class="pill pill-outline">Case&nbsp;studies</span>
           </div>
           <p class="card-body">
-            A hands-on tour of experimentation and causal methods — six
-            memo-style case studies with real code, balance / parallel-trends
-            diagnostics, and an executive writeup per study.
+            Six worked case studies covering A/B with CUPED, propensity-score
+            methods, difference-in-differences (including Callaway-Sant'Anna),
+            synthetic control, sequential testing, and switchback designs.
+            Each paired with a short memo and the diagnostics that back it.
           </p>
           <ul class="tag-row" aria-label="Topics">
             <li>A/B + CUPED</li>
@@ -123,9 +124,10 @@
             <span class="pill">PyPI · v0.2.0</span>
           </div>
           <p class="card-body">
-            A small, tested, typed Python package: sample-size &amp; MDE
+            A small, typed, tested Python package. Sample size and MDE
             (CUPED-aware), sequential testing (mSPRT), ratio-metric delta
             method, staggered DiD, and observational sensitivity analysis.
+            Each function cites the paper it implements.
           </p>
           <ul class="tag-row" aria-label="Topics">
             <li><code>pip install experiment-toolkit</code></li>
@@ -140,9 +142,9 @@
             <span class="pill pill-outline">Deep&nbsp;dive</span>
           </div>
           <p class="card-body">
-            End-to-end product analytics on a public dataset. Funnels,
-            retention cohorts, engagement segmentation, and a memo
-            proposing a defensible north-star metric under Goodhart's law.
+            SQL-first product analytics case studies. Funnels, retention
+            cohorts, engagement segmentation, and a memo proposing a
+            defensible north-star metric under Goodhart's law.
           </p>
           <ul class="tag-row" aria-label="Topics">
             <li>SQL-first</li>
@@ -158,9 +160,10 @@
             <span class="pill pill-outline">Reference</span>
           </div>
           <p class="card-body">
-            FAANG-style SQL interview problems with short references for
-            the patterns that show up again and again — windowed
-            aggregations, sessionisation, retention curves, cohort funnels.
+            Eighteen SQL problems in the style of large consumer-tech
+            interview loops. Windowed aggregations, sessionisation,
+            retention curves, cohort funnels, with notes on pitfalls and
+            dialect differences.
           </p>
           <ul class="tag-row" aria-label="Topics">
             <li>Window functions</li>
@@ -176,29 +179,29 @@
     <section id="writing" aria-labelledby="writing-h">
       <div class="section-head">
         <h2 id="writing-h">Writing</h2>
-        <p class="section-sub">Short, opinionated essays on methods that actually ship.</p>
+        <p class="section-sub">Short essays on the methods behind the case studies.</p>
       </div>
 
       <ol class="posts" reversed>
         <li>
           <a href="https://github.com/wavde/wavde/blob/main/writing/twfe-lies-on-staggered-rollouts.md" target="_blank" rel="noopener">When TWFE lies: staggered rollouts and what Callaway-Sant'Anna buys you</a>
-          <p>Why the default DiD regression is biased under staggered adoption — and what to reach for instead.</p>
+          <p>Why the default DiD regression is biased under staggered adoption, and what to reach for instead.</p>
         </li>
         <li>
-          <a href="https://github.com/wavde/wavde/blob/main/writing/e-values-for-observational-memos.md" target="_blank" rel="noopener">E-values: the one-number sensitivity check every observational memo should have</a>
-          <p>Quantifying robustness to unmeasured confounding in two lines of code.</p>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/e-values-for-observational-memos.md" target="_blank" rel="noopener">E-values: a one-number sensitivity check for observational memos</a>
+          <p>Quantifying robustness to unmeasured confounding, with Rosenbaum bounds as the matched-pair companion.</p>
         </li>
         <li>
           <a href="https://github.com/wavde/wavde/blob/main/writing/cuped-inside-sequential-testing.md" target="_blank" rel="noopener">CUPED inside sequential testing: two variance reductions that compound</a>
           <p>When and how to combine CUPED with mSPRT without breaking the always-valid guarantee.</p>
         </li>
         <li>
-          <a href="https://github.com/wavde/wavde/blob/main/writing/finding-and-fixing-msprt-bug.md" target="_blank" rel="noopener">Finding (and fixing) a 17% Type-I error bug in my own mSPRT implementation</a>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/finding-and-fixing-msprt-bug.md" target="_blank" rel="noopener">Finding (and fixing) a 17% Type-I error bug in an mSPRT implementation</a>
           <p>A case for property-based tests in statistical code.</p>
         </li>
         <li>
-          <a href="https://github.com/wavde/wavde/blob/main/writing/what-lalonde-taught-me.md" target="_blank" rel="noopener">What LaLonde taught me about propensity score matching</a>
-          <p>AIPW vs PSM on a replication benchmark.</p>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/what-lalonde-taught-me.md" target="_blank" rel="noopener">LaLonde, revisited: what a replication tells you about PSM, IPW, and AIPW</a>
+          <p>What overlap, double robustness, and a known experimental benchmark look like on a classic dataset.</p>
         </li>
         <li>
           <a href="https://github.com/wavde/wavde/blob/main/writing/picking-a-north-star-metric.md" target="_blank" rel="noopener">Picking a north-star metric when every candidate has a tradeoff</a>
@@ -210,7 +213,7 @@
     <section id="contact" aria-labelledby="contact-h">
       <div class="section-head">
         <h2 id="contact-h">Contact</h2>
-        <p class="section-sub">The projects above are the fastest way in — open an issue and I'll see it.</p>
+        <p class="section-sub">The projects above are the fastest way in. Open an issue and I'll see it.</p>
       </div>
       <ul class="links">
         <li><a href="https://github.com/wavde" target="_blank" rel="noopener">GitHub · @wavde</a></li>
