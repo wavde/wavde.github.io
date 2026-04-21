@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="dark light" />
-  <title>Tejas Wavde: Experimentation &amp; Causal Inference for Product</title>
-  <meta name="description" content="Causal inference and A/B testing for product decisions. Six case studies, the experiment-toolkit Python package, and short essays on the methods." />
+  <title>Tejas Wavde: Measurement, experimentation, and causal inference for product.</title>
+  <meta name="description" content="Paid-media measurement, experimentation, and causal inference. Case studies on geo lift, MTA, incrementality, MMM and A/B — plus a PyPI package and essays." />
   <meta name="author" content="Tejas Wavde" />
   <meta name="theme-color" content="#0b0f17" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#fbfcfe" media="(prefers-color-scheme: light)" />
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Tejas Wavde: Experimentation &amp; Causal Inference for Product" />
-  <meta property="og:description" content="Data Scientist. Case studies, a PyPI package, and essays on the methods that ship in production." />
+  <meta property="og:title" content="Tejas Wavde: Measurement, experimentation, and causal inference for product." />
+  <meta property="og:description" content="Paid-media measurement plus experimentation and causal inference. Case studies, a PyPI package, and essays on the methods that ship in production." />
   <meta property="og:url" content="https://wavde.github.io/" />
   <meta property="og:site_name" content="Tejas Wavde" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Tejas Wavde: Experimentation &amp; Causal Inference" />
-  <meta name="twitter:description" content="Case studies, a PyPI package, and essays on the methods that ship in production." />
+  <meta name="twitter:title" content="Tejas Wavde: Measurement, experimentation, and causal inference." />
+  <meta name="twitter:description" content="Paid-media measurement, experimentation, and causal inference. Case studies, a PyPI package, and essays." />
 
   <link rel="canonical" href="https://wavde.github.io/" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f17'/%3E%3Ctext x='50' y='66' font-family='ui-monospace,monospace' font-size='56' font-weight='700' text-anchor='middle' fill='%237aa7ff'%3Etw%3C/text%3E%3C/svg%3E" />
@@ -33,12 +33,18 @@
     "name": "Tejas Wavde",
     "url": "https://wavde.github.io/",
     "jobTitle": "Data Scientist",
-    "description": "Causal inference and A/B testing for product decisions.",
+    "description": "Paid-media measurement, experimentation and causal inference for product decisions.",
     "sameAs": [
       "https://github.com/wavde",
       "https://pypi.org/project/experiment-toolkit/"
     ],
     "knowsAbout": [
+      "Paid Media Measurement",
+      "Multi-Touch Attribution",
+      "Media Mix Modeling",
+      "Incrementality Testing",
+      "Geo Experiments",
+      "Web Attribution",
       "A/B Testing",
       "Causal Inference",
       "CUPED",
@@ -67,10 +73,10 @@
       </nav>
 
       <div class="hero-content" id="top">
-        <p class="eyebrow">Data Science · Analytics · Experimentation</p>
-        <h1>Experimentation and causal inference for product decisions.</h1>
+        <p class="eyebrow">Measurement · Experimentation · Causal Inference</p>
+        <h1>Measurement, experimentation, and causal inference for product.</h1>
         <p class="lede">
-          Case studies, the
+          Paid-media measurement, A/B and causal inference case studies, the
           <a href="https://pypi.org/project/experiment-toolkit/" target="_blank" rel="noopener"><code>experiment-toolkit</code></a>
           Python package, and short essays on the methods behind each one.
         </p>
@@ -80,9 +86,10 @@
         </div>
 
         <dl class="proof" aria-label="Portfolio highlights">
+          <div><dt>5</dt><dd>paid-media case studies</dd></div>
           <div><dt>6</dt><dd>causal-inference case studies</dd></div>
           <div><dt>1</dt><dd>Python package on PyPI</dd></div>
-          <div><dt>6</dt><dd>essays on the methods</dd></div>
+          <div><dt>9</dt><dd>essays on the methods</dd></div>
         </dl>
       </div>
     </div>
@@ -93,10 +100,32 @@
     <section id="work" aria-labelledby="work-h">
       <div class="section-head">
         <h2 id="work-h">Work</h2>
-        <p class="section-sub">Four repositories. Each one is end-to-end, tested, and reviewable.</p>
+        <p class="section-sub">Five repositories. Each one is end-to-end, tested, and reviewable.</p>
       </div>
 
       <div class="grid">
+
+        <article class="card">
+          <div class="card-head">
+            <h3><a href="https://github.com/wavde/paid-media-playbook" target="_blank" rel="noopener">paid-media-playbook</a></h3>
+            <span class="pill">Flagship</span>
+          </div>
+          <p class="card-body">
+            Five case studies on paid-media measurement: DMA-level geo lift
+            with synthetic control, multi-touch attribution (rule-based vs
+            Markov vs Shapley), matched-market incrementality, media-mix
+            modeling (MAP + Bayesian), and a web-attribution deep dive that
+            accounts for cookie loss and iOS ATT.  Synthetic data, recovered
+            ground truth, decision memos.
+          </p>
+          <ul class="tag-row" aria-label="Topics">
+            <li>Geo lift · synthetic control</li>
+            <li>MTA · Markov · Shapley</li>
+            <li>Incrementality · conversion lift</li>
+            <li>MMM · adstock + Hill</li>
+            <li>Cookie loss · ATT</li>
+          </ul>
+        </article>
 
         <article class="card">
           <div class="card-head">
@@ -183,6 +212,18 @@
       </div>
 
       <ol class="posts" reversed>
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/last-touch-under-credits-upper-funnel.md" target="_blank" rel="noopener">Last-touch attribution systematically under-credits upper funnel</a>
+          <p>The structural bias in LTA, why it compounds into budget, and what to reach for instead.</p>
+        </li>
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/geo-holdouts-as-paid-media-ab.md" target="_blank" rel="noopener">Geo holdouts as paid-media A/B</a>
+          <p>Cluster randomisation at the DMA level, synthetic control as its observational cousin, and MDE before you commit.</p>
+        </li>
+        <li>
+          <a href="https://github.com/wavde/wavde/blob/main/writing/mmm-vs-incrementality.md" target="_blank" rel="noopener">MMM vs incrementality: what each answers and what neither does</a>
+          <p>A measurement stack that earns credibility: MMM for allocation, geo for calibration, incrementality for campaigns.</p>
+        </li>
         <li>
           <a href="https://github.com/wavde/wavde/blob/main/writing/twfe-lies-on-staggered-rollouts.md" target="_blank" rel="noopener">When TWFE lies: staggered rollouts and what Callaway-Sant'Anna buys you</a>
           <p>Why the default DiD regression is biased under staggered adoption, and what to reach for instead.</p>
